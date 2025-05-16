@@ -1,0 +1,49 @@
+-Python is based on simple syntax
+-https://docs.python.org/3/library/index.html: Whole Python documentation
+-CLI: Command Line Interface
+-Command to interprete the code: pyhton3 <file_name>.py 
+-Python: Both a language and an intepreter
+         Can be installed for free in the PC
+-print("..."): System-defined function used as output 
+               It can take multiple arguments -> print("Hello", name, ...)
+                                                 It's the same as adding name to "Hello" = "Hello "+name
+               Prints the whole line and goes to the next
+               print("hello, ", end="") -> The next output isn't in a new line
+               print("hello, ", name, sep="cac") -> After each argument used "cac" is printed
+               Double quotes can be replaced by single quotes -> Using '' we can use the "" in the sentencce
+-It is possible to overwrite default parameters of a functions
+-Side effect: An action (mostly output) caused by a function
+-Semi colons (";") not used 
+-input("..."): System-defined function to read the characters in input
+               Inside the parenthesis you can put a string to show before the input read
+               The input read is saved as a string -> We can't refer to it as a number
+-Casting: Applied by writing <type>(<variable>) = int(x)
+          It is used if we want to add to numbers that we took in input -> Since they are saved as strings a casting is needed
+-"#...": Used to write comments
+-Pseudocode: Code written in human language
+             Used to express the intentions of the code
+             It's suggested to write a pseudocode and then write the related program
+-Format string: Recent implementation in Python
+                Tells to the interpreter to format the string in a specific way
+                print(f"hello, {name}") -> name is a variable and f communicate to the interpreter that there is a format string
+-Strings: Come with a lot of built-in functionalities 
+          <variable_name>.strip() -> Removes white spaces from a string
+          <variable_name>.capitalize() -> Capitalizes the user input 
+                                          The start of the word becomes an upper letter
+          We can apply more functions together by doing <variable_name>.<func_1>().<func_2>().<...>
+          <variable_name>.split("...") -> It separates the string into two substring, where the second starts from the first occurence 
+                                            of the string inserted
+-Interactive mode: One of the perks of Python
+                   It's possible to write and run the code line by line
+                   Command in the shell -> python3 
+-round(...): Takes a float variable as an argument and rounds to the nearest integer
+             In the documentation -> round(number, [, ndigits])
+                                     [] = optional parameter 
+                                     if we want to specify the number of digits
+-Function: Syntax -> def <fun_name>(<parameters>):
+           The function related code needs to be indented
+           It's possible to assign default parameters -> def <fun_name>(<def_param> = <value>, ...):
+                                                         We can reassign those parameters with others
+-Even if is not necessary, it's good coding to define a main function -> At the end of the file we must call it
+-x**2 = x to the power of 2 
+          

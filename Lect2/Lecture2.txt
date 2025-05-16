@@ -1,0 +1,28 @@
+-While loop: Syntax -> while <condition>:
+             The block of the while loop is indented
+-There's no "i++" or "i--" in Python, there's only "i+=1" and "i-=1"
+-List: Type of data in Python 
+       Similar to a list in ML
+-For loop: There's no implementation like in C++ or Java, just a for-each
+           Syntax -> for i in <list_of_elements>:
+           In each iteration, i takes the value of an element of the list 
+             in the next iteration it is going to be assigned the next element
+           For a for loop from 1 to 3 the implementation is -> for i in range(3):
+           If we are not intrested about the counter we can just place a wildcard "_" -> for _ in range(3)
+-range(<number>): It automatically returns a list formed by a range of values
+                  If the start is not given, it goes from 0 to <number>-1
+                  Documentation -> class range(start, stop[, step]) 
+-The multiplication works for strings as well -> "meow"*3 = "meowmeowmeow"     
+-How to get a restricted input from the user -> Induce an infinite loop = while True:
+                                                If the conditions are satisfacted we break the loop using "break" keyword 
+-Lists: Treated as arrays
+        A single element can be referred through an index
+-len(<variable>): Returns the length of <variable>
+                  <variable> needs to be a list / a string / a dictionary 
+-Dictionary: Group of associations between key and value
+             Syntax -> {"<key1>":"<value1>", ..., "<keyN>":"<valueN>"}
+             <dictionary>[<key>] -> Returns the corrispondent value
+             If we iterate the dictionary with a for loop, 
+               the counter is going to take the key value -> for i in <dictionary>
+                                                             i = key in each iteration
+-None: Keyword in Python which represents the absence of a value

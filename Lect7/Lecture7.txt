@@ -1,0 +1,32 @@
+-Regular expression (Regex): Pattern
+                             Ability to define patterns in our codes
+-"in" keyword: if <string1> in <string2>
+               Checks if <string1> is a substring of <string2>
+-re: Library for regular expressions
+     re.search(pattern, string, flags=0) -> Most used function of the library
+                                            A pattern can take a bunch of symbols -> . = any character except a newline
+                                                                                     * = 0 or more repetitions
+                                                                                     + = 1 or more repetitions
+                                                                                     ? = 0 or 1 repetition 
+                                                                                     {m} = m repetitions 
+                                                                                     {m, n} = m-n repetitions
+                                                                                     ^ = matches the start of the string 
+                                                                                     $ = matches the end of the string or just before the 
+                                                                                         newline at the end of the string
+                                                                                     [] = set of characters 
+                                                                                     [^] = complementing the set
+                                                                                     These operations are defined for the character before -> .* means that any character can be repeated 0-inf times
+                                                                                     ^...$ = The pattern we are searching can't be a substring, but the exact string
+                                                                                     [^@] = everything accepted but not @
+                                                                                     [a-z] = everything accepted between a and z
+                                                                                             some ranges are system-defined (like \w=every alpha-numeric symbol+_)
+                                                                                     A|B = either A or B are accepted
+                                                                                     (...) = a group 
+                                                                                             CAN CAPTURE THE VALUES IN THE STRING AND RETURN THEM
+     re.match(pattern, string, flags=0) -> Similar to re.search, but the start of the string and the start of the pattern must match
+     re.fullmatch(pattern, string, flags=0) -> Not only matches the start of the string, but the end as well
+                                            Flags = additional functionalities to impose to the search function
+                                                    re.IGNORECASE = Ignores the case of the user's input (whether it's uppercase or lowercase)
+     re.sub(pattern, repl, string, count=0, flags=0) -> repl = the string to replace the substring that matches the pattern with
+-walrus operator (:=): Assigns a value to a variable and asks a boolean question at the same time
+                       if matches:=re.search(pattern, string, flags): -> Useful if we want to use matches into the conditional

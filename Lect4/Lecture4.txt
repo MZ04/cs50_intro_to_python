@@ -1,0 +1,37 @@
+-random: Library to generate random numbers
+         random.choice(<list>) -> Take as a parameter a list of values
+                                  If you want to choose a random value between head and tail, you can just create a list with ["head", "tail"]
+                                    and call random.choice(["head", "tail"])
+         random.randint(a, b) -> Generates a random number from a to b (a and b are included)
+         random.shuffle(<iterable>) -> Takes an iterable (list, dictionary, ...) and reshuffles its elements randomly
+-"import" keyword: To import a module and use its functions
+-"from" keyword: To import a single function from a module
+                 Importing only the choice function by the random module -> from random import choice
+                                                                            When we use the "choice" function is not necessary to specify the "random" module
+-statistics: Library which contains function with statistic-purpose
+-command-line arguments: Arguments that the program receives when we start running it
+                         We need to import "sys" 
+                         sys.argv ("argument vector") -> Variable inside the sys module 
+                                                         List of all the words that the human typed in at the moment of execution
+                                                         The first position (sys.argv[0]) is occupied by the name of the file
+                                                         Since it's a list, we access to its elements by using an index
+                                                         Everytime we need to handle the case in which aren't inserted enough elements
+                                                         If an element is quote on quote, Python will read it as a single argument -> python name.py "Marco Zanatta"
+                                                                                                                                      sys.argv=["name.py", "Marco Zanatta"]
+-sys.exit(): Exits from the program and outputs the string in the parenthesis
+-Package: A module implemented as a folder
+          Third-party library
+          pip = package manager -> Program that generally comes with python
+                                   Allows you to access and install packages with a single command
+          pip install <package> -> To install the package called <package>
+          To use a package we type import <package>
+-API: Application Program Interface
+      Third-party services to which we refer to 
+      Keyword "request" -> To make a browser request
+      A mechanism wether I acccess to other server's datas and integrate it to my program
+-JSON: Javascript Object Notation
+       Used as a language agnostic (it does not depend on the language used) program to exchange data between computers
+       Consists in a dictionary -> "resultCount" = number of results
+                                   "results" = list of dictionaries with each one which represent a single result 
+                                               each result has many informations
+-__name__: Variable automatically set to "__main__" if the file we run is the one executed at command line 

@@ -1,0 +1,12 @@
+-Very common to write code to test the program written itself
+-assert(): To boldly claim that something is true
+           If something goes wrong in the program, this is going to show an error
+           assert x==4 -> If x is not equal to 4, the program gets interrupted 
+                           and an error is shown 
+           Like a common error the assert function does show the 
+             line which caused the error (so the assert which raised the error)
+-pytest: Third-part library that automates the test of your program
+         To use it -> pytest <test_file> in the shell
+                      <test_file> = file created to test corner cases of a program
+-Unit test: Testing individual units of your program (typically functions)
+-A function which returns a value and has no side effects is supposed to be more "testible" -> It can be tested more easily

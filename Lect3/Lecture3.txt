@@ -1,0 +1,15 @@
+-try/except: Like the try/catch in Java
+             try:
+                ...
+             except <exception>:
+                ...
+             else:
+                ...
+             It's not necessary just to include in the try block the 
+               function which raises the exception -> When it's raised in a point of the program,
+                                                        the except block is called
+             We can use "else" to define code if no exception is raised
+             If we define a variable inside the try-block, then 
+               it is accessible only in the else block -> We can solve it by using a loop
+             Inside the except-block we can insert "pass" -> The only thing it does is interrupting  
+                                                               the instruction   

@@ -1,0 +1,31 @@
+-List: We are able to store more than one piece of information
+       Stored in the computer memory -> Once the program terminates, all the memory allocated gets cleared
+-File I/O: Used to store data that we allocated in the memory at a certain point in the program
+           open (<file_name>, "w"/"r"/"a") -> Function to open a file and edit it 
+                                              We can read and write in it
+                                              "w" = write -> Recreates the entire file
+                                              "r" = read
+                                              "a" = append 
+                                              If we omit the mode to open, the default one is "r"
+                                              If the file doesn't exists it creates the file for me
+                                              Returns a file object
+-File object: Like the stream in c++
+              Thanks to it we can edit the file 
+              <file_object_name>.close() -> It saves the modification made in the file
+              If opened in write mode -> <file_object_name>.write(<string>) = writes the string in the file (must be a string)
+                                         All the data previously written in the file gets lost   
+              If opened in append mode -> It maintain all the data written in the file before opened
+              If opened in read mode -> <file_object_name>.readlines() = returns a list with all the lines in the file
+-With keyword: Used to automate the open and the close of the file 
+               with open(...) as <file_object_name>:
+                     ...
+               At the end of the block (when we don't indent the code anymore) the file is automatically closed
+-.csv: Comma-separated values
+       File extensions for containing multiple pieces of information of the same type
+       Exists a library created just for csv-file handling -> csv.reader(<file_object_name) = function that returns a list (for each row) of lists (each element separated by a comma)
+                                                              csv.DictReader(<file_object_name) = function that returns a list (for each row) of dictionaries, which keys are defined in the 
+                                                                                                    first row of the csv file
+                                                                                                  since the keys are already known, each row that the program reads is already considered a dictionary
+       Treating a csv file with a dictionary is more robust, since we can change the order of the elements in the file (perhaps we can switch and put home as first) and nothing changes in the code
+-sorted(iterable, key=None, reverse=False): Higher-order function -> key is a function
+                                            Alphabetically orders the list based on the key you choose for each student

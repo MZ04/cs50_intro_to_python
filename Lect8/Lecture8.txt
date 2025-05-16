@@ -1,0 +1,20 @@
+-Tuple: Immutable list of values
+        Can be used to return multiple values from a function
+        (..., ..., ...) / ..., ..., ... -> Syntax to communicate that the variable is a tuple 
+                                           The number of elements can vary
+        The elements of a tuple can be referred to through indexing (starting from 0) -> <tuple_name>[0]
+-To return mutiple variables you can use a list instead of a tuple -> If you want to change the returning values, you can define 
+                                                                        the list containing those values (since it cannot be changed in a tuple)
+-In a dictionary, to add an association between a key and a value you can simply put <dict_name>["<key>"]=<value>
+-keyword "class": Used to define a class 
+                  A constructor can be implemented
+                  To initialize an object of a given class -> student = Student()ù
+-We can define fields outside the class definition
+-Initialization method: def __init__ (self) -> If it takes no arguments
+                                     (self, ..., ...) -> If it takes arguments
+                        Takes the role of a constructor
+-self.<attribute_name> ->  Used to refer to the class' field 
+-"raise" keyword: Used to raise an error
+-__str__ method: Defined in a class 
+                 Called everytime an object of that class is going to be used as a string (for example in a print)
+-Each method of a class takes at least one argument called "self"

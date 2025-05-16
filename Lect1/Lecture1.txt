@@ -1,0 +1,19 @@
+-Conditionals = if <condition>:
+                No parenthesis needed
+-Remember to use the indentation
+-Flow chart: Diagram of a program's logic
+             It shows the program's control flow 
+-"elif" = "else if" in c++
+-"else" = "else" in c++
+-"or" = || in c++
+-"and" = "&&" in c++
+-Interval: If our condition is the integer being in 
+             an interval is permitted the following syntax: <lower_bound> <= n <= <upper_bound>
+-Boolean values (true and false) start with an uppercase letter
+-Pythonic expressions: Expressions that are proper of Python 
+                       Concise if-else statement -> <expression1> if <condition> else <expression2>
+-"match" = switch in c++ -> To use the same expression for various statements we need to specify the matches
+                              using a pipeline "|" (case 1 | 2 | 3: ...0)
+                            Expressions are specified in the next line using indentation
+-Wildcard "_": Used to refer to a generic value 
+               
